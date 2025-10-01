@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- page name -->
+  <title>S-toy — Sản phẩm</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="promo">Miễn phí vận chuyển cho đơn trên 1.000.000₫</div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="logo">☆*: .｡. o(≧▽≦)o .｡.:*☆</span><span>S-toy</span>
+        <nav class="main-nav">
+          <a href="homepage.html">Trang Chủ</a>
+          <a href="products.html">Sản phẩm</a>
+          <a href="collection.html">Bộ sưu tập</a>
+          <a href="introduct.html">Giới thiệu</a>
+          <a href="support.html">Hỗ trợ</a>
+        </nav>
+      </div>
+      <div class="nav-actions">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">👍</a>
+        <a href="cart.html">💸</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Products -->
+  <main style="margin-top:120px; padding:60px 20px; max-width:1200px; margin-left:auto; margin-right:auto;">
+    <h1 class="title" style="text-align:center;">Sản phẩm</h1>
+    <p class="subtitle" style="text-align:center; margin-bottom:60px;">Khám phá những món đồ chơi tinh tế, an toàn và sáng tạo.</p>
+    
+    <div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;">
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/0c/eb/58/0ceb581ca08b887fda94af6c4a289851.jpg" alt="?">
+        <h3>hoh</h3>
+        <p class="muted">???</p>
+        <div class="price">990.000₫</div>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/0c/eb/58/0ceb581ca08b887fda94af6c4a289851.jpg" alt="?">
+        <h3>hah</h3>
+        <p class="muted">???</p>
+        <div class="price">890.000₫</div>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/0c/eb/58/0ceb581ca08b887fda94af6c4a289851.jpg" alt="?">
+        <h3>heh</h3>
+        <p class="muted">???</p>
+        <div class="price">1.290.000₫</div>
+      </div>
+    </div>
+  </main>
+
+    <!-- Footer -->
+  <footer>
+    <p>S-toy. <span id="day"></span>/<span id="month"></span>/<span id="year"></span> . pinenapple apple pie.</p>
+  </footer>
+  <script>document.getElementById("day").textContent=new Date().getUTCDate()</script>
+  <script>document.getElementById("month").textContent=new Date().getUTCMonth()+1</script>
+  <script>document.getElementById("year").textContent=new Date().getUTCFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #fff;
+}
+
+/* Promo bar */
+.promo {
+  background: #111;
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #222;
+  margin-top: 65px;
+}
+
+/* Header / nav */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.9);
+  border-bottom: 1px solid #222;
+  z-index: 1000;
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand .logo {
+  font-weight: bold;
+  background: #0071e3;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.main-nav {
+  display: flex;
+  gap: 24px;
+  margin-left: 24px;
+}
+.main-nav a {
+  color: #aaa;
+  font-size: 15px;
+}
+.main-nav a.active,
+.main-nav a:hover {
+  color: #fff;
+}
+.nav-actions {
+  font-size: 20px;
+  display: flex;
+  gap: 16px;
+}
+.nav-actions a {
+  color: #aaa;
+}
+.nav-actions a.active,
+.nav-actions a:hover {
+  color: #fff;
+}
+
+/* Titles */
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.subtitle {
+  font-size: 20px;
+  color: #9aa0a6;
+  text-align: center;
+}
+
+/* Grid / cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+.card {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  padding-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card h3 {
+  margin: 16px;
+  font-size: 18px;
+}
+.card .muted {
+  margin: 0 16px;
+  font-size: 14px;
+  color: #9aa0a6;
+}
+.card .price {
+  margin: 12px 16px 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #222;
+  font-size: 14px;
+}
+
+/* Table (cart page) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 16px;
+}
+th {
+  color: #aaa;
+  font-weight: 500;
+  border-bottom: 1px solid #333;
+}
+td {
+  border-bottom: 1px solid #222;
+}
+
+/* Button */
+button {
+  background: #0071e3;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover {
+  background: #1581f0;
+}

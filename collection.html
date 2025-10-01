@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- page name -->
+  <title>S-toy — Bộ sưu tập</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="promo">Khám phá bộ sưu tập mới nhất của chúng tôi</div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="logo">☆*: .｡. o(≧▽≦)o .｡.:*☆</span><span>S-toy</span>
+        <nav class="main-nav">
+          <a href="homepage.html">Trang Chủ</a>
+          <a href="products.html">Sản phẩm</a>
+          <a href="collection.html" class="active">Bộ sưu tập</a>
+          <a href="introduct.html">Giới thiệu</a>
+          <a href="support.html">Hỗ trợ</a>
+        </nav>
+      </div>
+      <div class="nav-actions">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">👍</a>
+        <a href="cart.html">💸</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Collections -->
+  <main style="margin-top:120px; padding:60px 20px; max-width:1200px; margin-left:auto; margin-right:auto;">
+    <h1 class="title" style="text-align:center;">Bộ sưu tập</h1>
+    <p class="subtitle" style="text-align:center; margin-bottom:60px;">Chọn "đồ chơi" bạn yêu thích</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/0c/eb/58/0ceb581ca08b887fda94af6c4a289851.jpg" alt="Wooden toys">
+        <h3>???</h3>
+        <p class="muted">Tinh tế, nhạy cảm 😜</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/0c/eb/58/0ceb581ca08b887fda94af6c4a289851.jpg" alt="Robot toys">
+        <h3>???</h3>
+        <p class="muted">Xinh đẹp, mỹ miều ✨</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/0c/eb/58/0ceb581ca08b887fda94af6c4a289851.jpg" alt="Plushies">
+        <h3> ???</h3>
+        <p class="muted">Mềm mại, đáng yêu 🥰</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p>S-toy. <span id="day"></span>/<span id="month"></span>/<span id="year"></span> . pinenapple apple pie.</p>
+  </footer>
+  <script>document.getElementById("day").textContent=new Date().getUTCDate()</script>
+  <script>document.getElementById("month").textContent=new Date().getUTCMonth()+1</script>
+  <script>document.getElementById("year").textContent=new Date().getUTCFullYear()</script>
+</body>
+</html>

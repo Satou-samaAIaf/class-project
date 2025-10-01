@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- page name -->
+  <title>S-toy — Giỏ hàng</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="promo">Xem lại những đơn hàng của bạn</div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="logo">☆*: .｡. o(≧▽≦)o .｡.:*☆</span><span>S-toy</span>
+        <nav class="main-nav">
+          <a href="homepage.html">Trang Chủ</a>
+          <a href="products.html">Sản phẩm</a>
+          <a href="collection.html">Bộ sưu tập</a>
+          <a href="introduct.html">Giới thiệu</a>
+          <a href="support.html">Hỗ trợ</a>
+        </nav>
+      </div>
+      <div class="nav-actions">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">👍</a>
+        <a href="cart.html" class="active">🛒</a></div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main style="margin-top:120px; padding:60px 20px; max-width:1000px; margin-left:auto; margin-right:auto;">
+    <h1 class="title">Giỏ hàng</h1>
+    <p class="subtitle">Các "sản phẩm" bạn đã chọn</p>
+
+    <table style="width:100%; margin-top:40px; border-collapse:collapse;">
+      <thead>
+        <tr style="text-align:left; border-bottom:1px solid #333;">
+          <th>Sản phẩm</th>
+          <th>Số lượng</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #333;">
+          <td>???</td>
+          <td>1</td>
+          <td>1.590.000.000₫</td>
+        </tr>
+        <tr style="border-bottom:1px solid #333;">
+          <td>???</td>
+          <td>2</td>
+          <td>580.000.000₫</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="text-align:right; margin-top:30px; font-size:20px;">
+      <strong>Tổng cộng: 2.170.000.000₫</strong>
+    </div>
+
+    <div style="text-align:right; margin-top:20px;">
+      <button style="background:#0071e3; padding:12px 28px; border-radius:25px; color:#fff; border:none; font-size:16px; cursor:pointer;">Thanh toán</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>S-toy. <span id="day"></span>/<span id="month"></span>/<span id="year"></span> . pinenapple apple pie.</p>
+  </footer>
+  <script>document.getElementById("day").textContent=new Date().getUTCDate()</script>
+  <script>document.getElementById("month").textContent=new Date().getUTCMonth()+1</script>
+  <script>document.getElementById("year").textContent=new Date().getUTCFullYear()</script>
+</body>
+</html>
